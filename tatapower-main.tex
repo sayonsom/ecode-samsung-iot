@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{url}
+
+% Configure URL breaking
+\urlstyle{same}
+\renewcommand{\UrlBreaks}{\do\/\do-\do_\do\.\do\~\do\:\do\=}
+
+% Increase font size
+\usepackage[fontsize=11pt]{scrextend}
+
+% Increase line spacing
+\onehalfspacing
+
+\title{What is the Value of Daily 1 MW Peak Demand Reduction for Tata Power?}
+\author{SRI-B Energy Task Force}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% Summary boxes before executive summary
+\begin{tcolorbox}[colback=blue!10!white, colframe=blue!50!black, title=Financial Value, fonttitle=\bfseries]
+\large\centering\textbf{1 MW = INR 2.02--2.04 crore/year}\\
+\normalsize in direct annual savings for Tata Power
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=green!10!white, colframe=green!50!black, title=Environmental Impact, fonttitle=\bfseries]
+\large\centering\textbf{1 MW = 1,860 tonnes CO\textsubscript{2}/year}\\
+\normalsize Carbon credit value: INR 46.5 lakh/year
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=orange!10!white, colframe=orange!50!black, title=Infrastructure Value, fonttitle=\bfseries]
+\large\centering\textbf{1 MW = INR 4.5--6 crore}\\
+\normalsize in deferred generation infrastructure costs
+\end{tcolorbox}
+
+\section*{Executive Summary}
+For Tata Power, 1 MW of peak demand reduction delivers INR 2.02--2.04 crore in annual direct savings plus INR 4.5--6 crore in deferred infrastructure costs. This analysis combines operational data, regulatory filings, and demand response economics.
+
+\section{Cost Avoidance in Generation Infrastructure}
+\subsection{Deferred Capacity Expansion}
+Peak reduction avoids INR 4.5--6 crore/MW capital expenditure for new coal plants:
+\begin{equation}
+\text{CapEx Savings} = 1\,\text{MW} \times (INR 4.5\,\text{--}\,6\,\text{crore/MW})
+\end{equation}
+
+\subsection{Fuel Cost Savings}
+Daily savings from reduced peaker plant usage:
+\begin{equation}
+\text{Daily Savings} = 1\,\text{MW} \times 4\,\text{h} \times INR 10/\text{kWh} = INR 40,000
+\end{equation}
+Annual savings reach \textbf{INR 1.46 crore}.
+
+\section{Transmission Optimization}
+\subsection{Infrastructure Deferral}
+Tata Power's Mumbai network saves:
+\begin{equation}
+\text{NPV} = \sum_{t=1}^{10} \frac{INR 1.5\,\text{crore}}{(1+0.07)^t} = INR 9.8\,\text{crore}
+\end{equation}
+
+\subsection{Loss Reduction}
+Technical loss savings calculation:
+\begin{equation}
+\text{Annual Savings} = 94.9\,\text{MWh} \times INR 5.2/\text{kWh} = INR 4.93\,\text{lakh}
+\end{equation}
+
+\section{Demand Response Economics}
+\begin{table}[ht]
+\centering
+\caption{Demand Response Program Economics}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Component & Cost (INR  lakh) & Savings (INR  lakh) \\
+\midrule
+Customer Incentives & 12.0 & -- \\
+Fuel Cost Savings & -- & 146.0 \\
+T\&D Loss Reduction & -- & 4.9 \\
+\bottomrule
+\end{tabular}
+\label{tab:dresp}
+\end{table}
+
+\section{Regulatory Benefits}
+\subsection{Capacity Markets}
+\begin{equation}
+\text{Revenue} = 1\,\text{MW} \times INR 6\,\text{lakh/MW} = INR 6\,\text{lakh}
+\end{equation}
+
+\subsection{Renewable Credits}
+\begin{equation}
+\text{RPO Value} = INR 2.3\,\text{lakh/MW} \times 1\,\text{MW} = INR 2.3\,\text{lakh}
+\end{equation}
+
+\section{Environmental Impact}
+Carbon credit valuation:
+\begin{equation}
+\text{CO}_2\,\text{Savings} = 1,860\,\text{t} \times INR 2,500/\text{t} = INR 46.5\,\text{lakh}
+\end{equation}
+
+\section*{Conclusion}
+The total quantified value ranges demonstrate peak reduction's strategic importance:
+\begin{equation}
+\text{Total Annual Value} = INR 2.02\,\text{--}\,2.04\,\text{crore}
+\end{equation}
+
+\section*{Where did we get these numbers from?}
+
+\textit{(Note: these are shortened-links for readability. Clicking them on the PDF copy will take us to the full link)}
+
+\begin{enumerate}
+    \item We took the data about Peak demand projections, infrastructure costs, and technical loss benchmarks from National Electricity Plan, India\\
+    \textbf{Link:} \href{https://cea.nic.in/ceadocument/national-electricity-plan-vol-1-generation-notified-vide-extra-ordinary-gazette-no-1871-si-no-121-under-part-iii-section-iv-dated-28-03-2018/}{cea.nic.in/ceadocument/national-electricity-plan}
+    
+    \item We took the data related to Financials, renewable investments, and demand response initiatives from Tata Power Annual Report 2023-24\\
+    \textbf{Link:} \href{https://tatapowertrading.com/wp-content/uploads/2023/11/ANNUAL-REPORT-2023.pdf}{tatapowertrading.com/ANNUAL-REPORT-2023.pdf}
+    
+    \item T\&D upgrade costs data was taken from PowerGrid of India (PGCIL)\\
+    \textbf{Link:} \href{https://www.powergrid.in/sites/default/files/inline-files/Application-for-Charges.pdf}{powergrid.in/Application-for-Charges.pdf}
+    
+    \item Coal Plant Capital Cost data from IEA\\
+    \textbf{Link:} \href{https://www.iea.org/reports/coal-2024}{iea.org/reports/coal-2024}
+    
+    \item AutoGrid+Tata Power Demand Response Impact report from Uplight\\
+    \textbf{Link:} \href{https://uplight.com/press/tata-power-and-autogrid-expand-ai-enabled-smart-energy-management-in-mumbai-supporting-indias-net-zero-goals/}{uplight.com/press/tata-power-and-autogrid}
+\end{enumerate}
+
+\end{document}
